@@ -12,6 +12,12 @@ export default createGlobalStyle`
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
     }
 
+    body, input, button, textarea {
+        font-family: 'Roboto', serif;
+        font-size: 16px;
+        outline: none;
+    }
+
     a {
         text-decoration: none;
     }

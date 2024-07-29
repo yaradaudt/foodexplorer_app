@@ -10,6 +10,8 @@ export default createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+        -webkit-font-smoothing: antialiased;
     }
 
     body, input, button, textarea {

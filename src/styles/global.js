@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import {DEVICE_BREAKPOINTS } from "./deviceBreakpoins"
 
 export default createGlobalStyle`
     * {
@@ -7,7 +8,16 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    :root {
+        font-size: 16px;
+        
+        @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+            font-size: 12px;
+        }
+    }
+
     body {
+        width: 1368px;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
@@ -16,7 +26,7 @@ export default createGlobalStyle`
 
     body, input, button, textarea {
         font-family: 'Roboto', serif;
-        font-size: 16px;
+        font-size: 1rem;
         outline: none;
     }
 

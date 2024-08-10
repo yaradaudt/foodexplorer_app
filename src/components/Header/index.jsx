@@ -3,7 +3,9 @@ import logoSVG from '../../assets/logo.svg'
 import { Button } from '../Button'
 import { Search } from '../Search'
 
+//import { PiReceipt } from "react-icons/pi"
 import { FiLogOut } from "react-icons/fi"
+
 
 export function Header(){
     return(
@@ -20,7 +22,9 @@ export function Header(){
 
             </div>
 
-            <Button title="Carrinho"/>
+            <Button className="cartButton"
+            //icon={PiReceipt} // this is not showing in the preview, I'll need to figure it out later.
+            title="Carrinho"/>
 
             <LogOut>
                 <FiLogOut />

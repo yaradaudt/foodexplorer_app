@@ -15,12 +15,10 @@ export const Container = styled.footer`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
     .footerLogo {
-        padding-left: 6.5rem;
+        padding-left: 5rem;
     }
 
     .copyright {
-        margin-right: 2rem;
+        margin-right: 4rem;
     }
-
-
 `

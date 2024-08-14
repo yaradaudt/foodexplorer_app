@@ -17,7 +17,7 @@ export const Container = styled.header`
     .wrapper {
         display: flex;
         align-items: center;
-        padding: 1.5rem 0 1.5rem 6.5rem;
+        padding: 1.5rem 0 1.5rem 5.6rem;
         gap: 2rem;
 
         a {

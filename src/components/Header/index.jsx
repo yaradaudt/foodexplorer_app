@@ -17,8 +17,8 @@ export function Header(){
 
                 <Search/>
 
-                <a href="">Meus Favoritos</a>
-                <a href="">Histórico de pedidos</a>
+                <a href="#">Meus Favoritos</a>
+                <a href="#">Histórico de pedidos</a>
 
             </div>
 

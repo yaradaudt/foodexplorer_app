@@ -5,8 +5,6 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
- 
-  border-radius: 5px;
   
   > input {
     height: 3rem;
@@ -14,8 +12,9 @@ export const Container = styled.div`
     box-sizing: border-box;    
     padding: 0.75rem 0.85rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    background: transparent;
+    background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     border: none;
+    border-radius: 5px;
 
     &::placeholder {
       color: ${({ theme }) => theme.COLORS.LIGHT_500};

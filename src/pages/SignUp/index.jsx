@@ -6,7 +6,7 @@ import { Button } from "../../components/Button"
 import logoSVG from '../../assets/logo.svg'
 
 
-export function SignIn(){
+export function SignUp(){
     return(
         <Container>
             <div className="wrapper">
@@ -17,7 +17,14 @@ export function SignIn(){
 
             <Form>
 
-                <h1>Faça login</h1>
+                <h1>Crie sua conta</h1>
+
+                <h2>Seu nome</h2>
+
+                <Input 
+                placeholder="Exemplo: Maria da Silva"
+                type="text"
+                />
 
                 <h2>Email</h2>
 
@@ -35,12 +42,9 @@ export function SignIn(){
 
                 <Button 
                 className="logIn"
-                title="Entrar"/>
+                title="Criar conta"/>
 
-                <a href="#">Criar uma conta</a>
-
-
-
+                <a href="#">Já tenho uma conta</a>
             </Form>
         </Container>
     )

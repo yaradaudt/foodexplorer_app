@@ -28,6 +28,6 @@ export default {
         BLUE_200: "#82F3FF",
 
         GRADIENT_100: "#091E26",
-        GRADIENT_200: "#00131C"
+        GRADIENT_200: "#00131C",
     }
 }

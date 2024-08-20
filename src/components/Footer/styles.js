@@ -5,20 +5,18 @@ export const Container = styled.footer`
 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
     width: 100%;
     height: 4.5rem;
-    position: absolute;
+
+    padding: 0 6rem;
+
     bottom: 0;
     left: 0;
 
     border: none;
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
-    .footerLogo {
-        padding-left: 5rem;
-    }
-
-    .copyright {
-        margin-right: 4rem;
-    }
 `

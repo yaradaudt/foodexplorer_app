@@ -17,7 +17,7 @@ export default createGlobalStyle`
     }
 
     body {
-        width: 1240px;
+        width: 1440px;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
 

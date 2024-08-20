@@ -9,13 +9,14 @@ export const Container = styled.div`
     .wrapper {
         display: flex;
         flex-direction: column;
+        
 
         justify-content: center;
         align-items: center;
         text-align: center;
 
-        margin-left: 153px;
-        margin-right: 200px;
+        margin-left: 9.5rem;
+        margin-right: 19rem;
 
         > img {
             width: 20rem;

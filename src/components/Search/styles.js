@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
-  width: 18.75rem;
+  width: 22rem;
   padding-left: 0.8rem;
   border-radius: 5px;
 
@@ -15,7 +15,7 @@ export const Container = styled.div`
 
   input {
     color: ${({ theme }) => theme.COLORS.LIGHT_500};
-    font-size: 0.95rem;
+    font-size: 1rem;
 
     &:disabled {
       opacity: 0.5;

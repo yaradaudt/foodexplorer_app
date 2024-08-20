@@ -5,8 +5,9 @@ export const Container = styled.header`
 
     display: flex;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    gap: 1.5rem;
+    gap: 2rem;
 
     width: 100%;
     height: 6rem;
@@ -17,33 +18,34 @@ export const Container = styled.header`
     .wrapper {
         display: flex;
         align-items: center;
-        padding: 1.5rem 0 1.5rem 5.6rem;
-        gap: 2rem;
+        padding: 1.5rem 0;
+        gap: 2.5rem;
 
         a {
             display: flex;
-            font-size: 0.9rem;
+            font-size: 1rem;
             color: ${({ theme }) => theme.COLORS.LIGHT_300};
         }
     }
     .cartButton {
         width: 13.5rem;
         height: 3.5rem;
-        margin: 0;
+        margin: auto 0;
     }
 
     `
 
 export const LogOut = styled.button`
     display: flex;
-    align-items: center;
+    align-items: right;
     border: none;
     background: none;
+
 
     > svg {
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
         font-size: 1.5rem;
-
+        
     }
 
 `

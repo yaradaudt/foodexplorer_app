@@ -2,6 +2,7 @@
 import { Container, Content } from './styles.js'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
+import { Section } from  '../../components/Section'
 import bannerSVG from '../../assets/banner.svg'
 
 
@@ -22,6 +23,18 @@ export function Home() {
               <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
             </div>  
           </div>
+
+          <Section title='Refeições'>
+
+          </Section>
+
+          <Section title='Sobremesas'>
+            
+          </Section>
+
+          <Section title='Bebidas'>
+            
+          </Section>
 
 
         </Content>

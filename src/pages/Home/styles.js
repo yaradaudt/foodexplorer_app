@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
 
     display: grid;
-    grid-template-rows: 6rem auto 4.5rem; // verificar este valor depois que estiver possivel de visualizar
+    grid-template-rows: 6rem auto 4.5rem;
     grid-template-areas: 
     "header"
     "content"
@@ -27,46 +27,42 @@ export const Content = styled.div`
     align-items: center;
     justify-content: center;
 
-    .banner {
-      display: flex;
-      position: relative;
-      width: 77rem;
-      height: 16.25rem;
-      border-radius: 0.5rem;
-      background: linear-gradient(180deg,
-        ${({theme}) => theme.COLORS.GRADIENT_100} 0%,
-        ${({theme}) => theme.COLORS.GRADIENT_200} 100%
+`
+export const Banner =  styled.div`
+    display: flex;
+    position: relative;
+    width: 77rem;
+    height: 16.25rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(180deg,
+    ${({theme}) => theme.COLORS.GRADIENT_100} 0%,
+    ${({theme}) => theme.COLORS.GRADIENT_200} 100%
     );
-      
-    }
-    
-    .banner-image img {
-        display: flex;
-        position: absolute;
-        left: -4rem;
-        bottom: -1rem;
-    }
-    
-    .banner-text {
-        position: absolute;
-        text-align: left;
-        align-items: center;
-        top:  5.5rem;
-        right: 6.25rem;
+`
+export const BannerImage = styled.div`
+    display: flex;
+    position: absolute;
+    left: -4rem;
+    bottom: -1rem;
 
-        > h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: 2.5rem;
-            color: ${({ theme }) => theme.COLORS.LIGHT_300};
-        }
+`
+export const BannerText = styled.div`
+    position: absolute;
+    text-align: left;
+    align-items: center;
+    top:  5.5rem;
+    right: 6.25rem;
 
-        > p {
-            font-size: 1rem;
-            font-weight: 400;
-            color: ${({ theme }) => theme.COLORS.LIGHT_300};
-        }
-
+    > h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 2.5rem;
+        color: ${({ theme }) => theme.COLORS.LIGHT_300};
     }
 
+    > p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    }
 `

@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import { Container, Content } from './styles.js'
+import { Container, Content, Banner, BannerImage, BannerText } from './styles.js'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { Section } from  '../../components/Section'
@@ -12,17 +12,17 @@ export function Home() {
       <Header />
       <main>
         <Content>
-          <div className='banner'>
-            <div className='banner-image'>
+          <Banner>
+            <BannerImage>
               <img src={bannerSVG}
               alt='Imagem de 5 macarroons(doce ingles) coloridos em queda rodeados por frutos vermelhos.'
               />
-            </div>
-            <div className='banner-text'>
+            </BannerImage>
+            <BannerText>
               <h1>Sabores inigualáveis</h1>
               <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
-            </div>  
-          </div>
+            </BannerText>  
+          </Banner>
 
           <Section title='Refeições'>
 

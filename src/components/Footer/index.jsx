@@ -1,21 +1,18 @@
-import { Container } from './styles'
+import { Container, FooterLogo, Copyright } from './styles'
 import footerLogo from '../../assets/footerLogo.svg'
-import copyright from '../../assets/copyright.svg'
 
 export function Footer(){
     return(
         <Container>
-           <div className="footerLogo" >
+           <FooterLogo >
                 <img src={footerLogo}
                 alt="Food explorer logo"
             />
-            </div>
+            </FooterLogo>
 
-            <div className="copyright">
-                <img src={copyright} 
-                alt="2023 - Todos os direitos reservados."
-            />
-            </div>
+            <Copyright>
+                <p>&copy; 2024 Todos os direitos reservados.</p>
+            </Copyright>
 
                 
 

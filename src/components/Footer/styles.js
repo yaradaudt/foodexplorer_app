@@ -20,3 +20,12 @@ export const Container = styled.footer`
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
 `
+
+export const FooterLogo = styled.div`
+    height: 1.8rem;
+`
+
+export const Copyright = styled.div`
+    color: ${({ theme }) => theme.COLORS.LIGHT_200};
+    font-size: 0.8rem;
+`

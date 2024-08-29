@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import { Container, Content, Banner, BannerImage, BannerText } from './styles.js'
+import { IngredientsTags } from '../../components/IngredientsTags/index.jsx'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { Section } from  '../../components/Section'
@@ -25,6 +26,9 @@ export function Home() {
           </Banner>
 
           <Section title='Refeições'>
+          <IngredientsTags title='rucula'/>
+          <IngredientsTags title='tomate'/>
+
 
           </Section>
 

@@ -22,7 +22,7 @@ export const Container = styled.footer`
 `
 
 export const FooterLogo = styled.div`
-    height: 1.8rem;
+    height: 1.9rem;
 `
 
 export const Copyright = styled.div`

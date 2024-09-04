@@ -8,15 +8,14 @@ export const Container = styled.button`
   background: none;
 
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.5rem;
-  line-height: 140%;
 
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
 
   > svg {
-    font-size: 2rem;
+    font-size: 3rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
   }
   

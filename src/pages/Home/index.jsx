@@ -26,9 +26,6 @@ export function Home() {
           </Banner>
 
           <Section title='Refeições'>
-          <IngredientsTags title='rucula'/>
-          <IngredientsTags title='tomate'/>
-
 
           </Section>
 

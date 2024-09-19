@@ -10,14 +10,14 @@ import { Home } from './pages/Home'
 import { SignIn } from './pages/SignIn'
 import { SignUp } from './pages/SignUp'
 import { Dish } from './pages/Dish'
-
+import { AddDish } from './pages/AddDish'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Dish />
+      <AddDish />
     </ThemeProvider>
   </React.StrictMode>
 )

@@ -34,7 +34,6 @@ export const DishDetailled = styled.div`
     align-items: center;
     gap: 2rem;
     padding-right: 7.6rem;
-
     
 `
 

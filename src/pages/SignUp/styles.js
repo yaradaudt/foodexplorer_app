@@ -4,32 +4,29 @@ export const Container = styled.div`
     height: 100vh;
 
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    
+    `
+export const Wrapper = styled.div`
+    display: flex;
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    margin-left: 9.5rem;
+    margin-right: 19rem;
 
-        margin-left: 9.5rem;
-        margin-right: 19rem;
-
-        > img {
-            width: 20rem;
-        }
+    img {
+        width: 20rem;
     }
 
 `
 
 export const Form = styled.form`
-    width: 476px;
-    height: 580px;
+    width: 29.75rem;
+    height: auto;
 
-    margin-top: 3.5rem;
-    margin-right: 1rem;
     padding: 0 4rem;
 
     border-radius: 1rem;

@@ -1,4 +1,6 @@
-import { Container, Form } from "./styles"
+import { Link } from "react-router-dom"
+
+import { Container, Wrapper, Form } from "./styles"
 
 import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
@@ -9,11 +11,11 @@ import logoSVG from '../../assets/logo.svg'
 export function SignIn(){
     return(
         <Container>
-            <div className="wrapper">
+            <Wrapper>
                 <img src={logoSVG} 
                 alt="Food Explorer Logo" 
                 />
-            </div>
+            </Wrapper>
 
             <Form>
 
@@ -30,16 +32,14 @@ export function SignIn(){
 
                 <Input
                 placeholder="No mínimo 6 caracteres"
-                type="text"
+                type="password"
                 />
 
                 <Button 
                 className="logIn"
                 title="Entrar"/>
 
-                <a href="#">Criar uma conta</a>
-
-
+                <Link to="/register">Criar uma conta</Link>
 
             </Form>
         </Container>

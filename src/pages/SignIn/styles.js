@@ -4,33 +4,29 @@ export const Container = styled.div`
     height: 100vh;
 
     display: flex;
-    align-items: stretch;
+    align-items: center;
 
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        
+`
+export const Wrapper = styled.div`
+    display: flex;
 
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-        margin-left: 9.5rem;
-        margin-right: 19rem;
+    margin-left: 9.5rem;
+    margin-right: 19rem;
 
-        > img {
-            width: 20rem;
-        }
+    img {
+        width: 20rem;
     }
 
 `
 
 export const Form = styled.form`
-    width: 476px;
-    height: 540px;
+    width: 29.75rem;
+    height: auto;
 
-    margin-top: 5rem;
-    margin-right: 1rem;
     padding: 0 4rem;
 
     border-radius: 1rem;
@@ -66,11 +62,12 @@ export const Form = styled.form`
         align-self: flex-start;
     }
 
-    > a {
+    a {
         font-family: 'Poppins', sans-serif;
         font-size: 1rem;
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
         font-weight: 500;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
+        padding-bottom: 3rem;
     }
 `

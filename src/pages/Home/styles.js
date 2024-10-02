@@ -3,19 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.div`
     width: 100%;
 
-    display: grid;
-    grid-template-rows: 6rem auto 4.5rem;
-    grid-template-areas: 
-    "header"
-    "content"
-    "footer"
+    display: flex;
+    flex-direction: column;
 
-    > main {
+    main {
         grid-area: content;
         justify-self: center;
         overflow-y: scroll;
     }
-    ;
 `
 
 export const Content = styled.div`

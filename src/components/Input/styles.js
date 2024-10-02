@@ -20,5 +20,9 @@ export const Container = styled.div`
       color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
 
+    &:focus{
+      outline: 1px solid ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
   }
 `

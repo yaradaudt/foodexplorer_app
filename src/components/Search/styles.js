@@ -18,7 +18,11 @@ export const Container = styled.div`
     font-size: 1rem;
 
     &:disabled {
-      opacity: 0.5;
+      opacity: 0.5; 
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 `

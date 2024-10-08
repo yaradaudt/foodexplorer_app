@@ -48,6 +48,10 @@ export const Form = styled.form`
 
     }
 
+    input:focus {
+      outline: 1px solid ${({ theme }) => theme.COLORS.LIGHT_100};
+    }
+
     .logIn {
         margin-top: 2rem;
         width: 100%;

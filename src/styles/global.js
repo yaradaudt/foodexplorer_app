@@ -18,7 +18,7 @@ export default createGlobalStyle`
 
     body {
         width: 1440px;
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_100};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
 
         -webkit-font-smoothing: antialiased;
@@ -42,5 +42,24 @@ export default createGlobalStyle`
     button:hover, a:hover {
         filter: brightness(0.9);
     }
+
+    .slick-slide {
+        display: flex !important; 
+        justify-content: center;
+        align-items: center; 
+}
+
+    .slick-list {
+        overflow: hidden; 
+    }
+
+    .slick-track {
+        display: flex;
+    }
+
+    .slick-prev, .slick-next {
+        z-index: 1;
+    }
+
 
 `

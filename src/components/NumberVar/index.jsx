@@ -1,5 +1,5 @@
-import { FiMinus, FiPlus } from "react-icons/fi";
-import { Container } from "./styles";
+import { FiMinus, FiPlus } from "react-icons/fi"
+import { Container } from "./styles"
 
 export function NumberVar({ number, setNumber }) {
     const incrementNumber = () => {

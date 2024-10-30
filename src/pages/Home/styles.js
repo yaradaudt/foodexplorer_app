@@ -26,19 +26,20 @@ export const Content = styled.div`
 export const Banner =  styled.div`
     display: flex;
     position: relative;
-    width: 77rem;
+    width: 78rem;
     height: 16.25rem;
+    padding: 0 6rem;
     border-radius: 0.5rem;
     background: linear-gradient(180deg,
-    ${({theme}) => theme.COLORS.GRADIENT_100} 0%,
-    ${({theme}) => theme.COLORS.GRADIENT_200} 100%
+    ${({theme}) => theme.COLORS.GRADIENT_200} 0%,
+    ${({theme}) => theme.COLORS.GRADIENT_300} 100%
     );
 `
 export const BannerImage = styled.div`
     display: flex;
     position: absolute;
-    left: -4rem;
-    bottom: -1rem;
+    left: -4.1rem;
+    bottom: -0.86rem;
 
 `
 export const BannerText = styled.div`

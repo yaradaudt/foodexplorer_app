@@ -27,7 +27,8 @@ export default {
         BLUE_100: "#065E7C",
         BLUE_200: "#82F3FF",
 
-        GRADIENT_100: "#091E26",
-        GRADIENT_200: "#00131C",
+        GRADIENT_100: "#000A0F",
+        GRADIENT_200: "#091E26",
+        GRADIENT_300: "#00131C",
     }
 }

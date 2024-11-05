@@ -1,11 +1,9 @@
 // import { useState } from 'react'
 import { Container, Content, Banner, BannerImage, BannerText } from './styles.js'
-import { IngredientsTags } from '../../components/IngredientsTags/index.jsx'
 import { SliderCarousel } from '../../components/SliderCarousel'
 import { Header } from '../../components/Header'
 import { Footer } from '../../components/Footer'
 import { Section } from  '../../components/Section'
-import { DishCard } from '../../components/DishCard'
 import bannerSVG from '../../assets/banner.svg'
 
 export function Home() {
@@ -31,13 +29,12 @@ export function Home() {
           </Section>
 
           <Section title='Sobremesas'>
-            
+            <SliderCarousel />
           </Section>
 
           <Section title='Bebidas'>
-            
+            <SliderCarousel />
           </Section>
-
 
         </Content>
       </main>

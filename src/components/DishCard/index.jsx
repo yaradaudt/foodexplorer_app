@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"
+import { useCart } from '../../hooks/cart'
 import { Container, FavButton, DishToCart } from './styles'
-import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowRightSLine } from "react-icons/ri"
 import { NumberVar } from '../NumberVar'
 import { Button } from '../Button'
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
@@ -14,8 +15,15 @@ export function DishCard({ data }) {
     //const { user } = useAuth()
     //const imageURL = `${api.defaults.baseURL}/files/${data.image}`
     //const { addFavorite, removeFavorite, isFavorite } = useFavorites()
-    const [number, setNumber] = useState(1);
     const { title, price, image } = data;
+    const { addToCart } =  useCart();
+
+    const [number, setNumber] = useState(1);
+
+    function handleAddToCart() {
+      const item = { ...data, quantity: number }
+      addToCart(item)
+    }
 
     /*function handleToggleFavorite() {
         if (isFavorite(dish.id)) {
@@ -38,8 +46,8 @@ export function DishCard({ data }) {
                     <p className="description">Rabanetes, folhas verdes e molho agridoce salpicados com gergelim </p>
                     <h1 className="price">{price}</h1>
                 <DishToCart>
-                <NumberVar number={number} setNumber={setNumber} />
-                <Button title='incluir' />
+                <NumberVar number={number} setNumber={setNumber}/>
+                <Button title='incluir' onClick={handleAddToCart}/>
                 </DishToCart>
         </Container>
     )

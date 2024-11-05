@@ -18,12 +18,14 @@ export function SliderCarousel() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 1000,
-        slidesToShow: 2.5,
-        slidesToScroll: 2,
+        speed: 800,
+        slidesToShow: 3.5,
+        slidesToScroll: 1,
         centerMode: true,
-        centerPadding: "15%",
-        focusOnSelect: true,
+        centerPadding: "4%",
+        focusOnSelect: false, 
+        swipeToSlide: true,
+        arrows: true,
         nextArrow: (
             <RightArrowWrapper>
                 <CustomNextArrow />

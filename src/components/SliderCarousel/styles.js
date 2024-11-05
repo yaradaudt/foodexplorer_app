@@ -14,7 +14,7 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
 
     .slick-center {
@@ -26,7 +26,6 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
-
     }
 
     .slick-list {
@@ -101,6 +100,7 @@ export const CustomNextArrow = styled(RxCaretRight)`
     position: absolute;
     top: 50%;
     right: 2rem;
+    pointer-events: auto;
     cursor: pointer;
     font-size: 3.5rem;
 
@@ -114,6 +114,7 @@ export const CustomNextArrow = styled(RxCaretRight)`
 export const CustomPrevArrow = styled(RxCaretLeft)`
     position: absolute;
     top: 50%;
+    pointer-events: auto;
     cursor: pointer;
     left: 2rem;
     font-size: 3.5rem;

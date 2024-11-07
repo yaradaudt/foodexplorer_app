@@ -58,7 +58,7 @@ export default createGlobalStyle`
     }
 
     .slick-prev, .slick-next {
-        z-index: 1;
+        z-index: 2;
     }
 
 

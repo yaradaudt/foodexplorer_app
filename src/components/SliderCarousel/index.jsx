@@ -1,20 +1,12 @@
 import { Container, RightArrowWrapper, LeftArrowWrapper, CustomNextArrow, CustomPrevArrow } from './styles'
 import { DishCard } from '../../components/DishCard'
+
 import Slider from  'react-slick'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const dishes = [
-    { title: "Salada Ravanello", price: "R$ 49,90", image: "https://via.placeholder.com/150" },
-    { title: "Torradas de Parma", price: "R$ 39,90", image: "https://via.placeholder.com/150" },
-    { title: "Spaguetti Gambe", price: "R$ 59,90", image: "https://via.placeholder.com/150" },
-    { title: "Prato 4", price: "R$ 49,90", image: "https://via.placeholder.com/150" },
-    { title: "Prato 5", price: "R$ 39,90", image: "https://via.placeholder.com/150" },
-    { title: "Prato 6", price: "R$ 59,90", image: "https://via.placeholder.com/150" },
-];
-
-export function SliderCarousel() {
+export function SliderCarousel({ dishes }) {
     const settings = {
         dots: false,
         infinite: true,
@@ -41,10 +33,10 @@ export function SliderCarousel() {
     return(
         <Container>
             <Slider {...settings}>
-                {dishes.map((dish, index) => (
-                    <DishCard key={index} data={dish}/>
+                {dishes.map((dish) => (
+                    <DishCard key={dish.id} data={dish}/>
                 ))}
-            </Slider>
+                </Slider>
         </Container>
     )
 }

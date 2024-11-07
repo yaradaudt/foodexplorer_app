@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react'
+import { toast  } from 'react-toastify'
 
 export const CartContext = createContext({})
 
@@ -17,7 +18,7 @@ export function CartProvider({ children }) {
                 return [...prevItems, newItem]
             }
         })
-            alert('Adicionado ao carrinho com sucesso!')
+            toast.success('Adicionado ao carrinho!')
         }
 
     const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0)

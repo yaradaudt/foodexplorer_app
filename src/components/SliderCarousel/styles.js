@@ -14,12 +14,14 @@ export const Container = styled.div`
         display: flex;
         justify-content: center;
         box-sizing: border-box;
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease;
+        opacity: 0.7;
     }
 
     .slick-center {
         transform: scale(1.07);
         z-index: 2;
+        opacity: 1;
     }
 
     .slick-track {
@@ -33,7 +35,7 @@ export const Container = styled.div`
     }
 
     .slick-prev, .slick-next {
-        z-index: 1;
+        z-index: 10;
     }
 `
 export const RightArrowWrapper = styled.div`

@@ -24,11 +24,15 @@ export const Container = styled.div`
         font-size: 1.5rem;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        color: ${({theme}) => theme.COLORS.LIGHT_300};
+        
+        a {
+            color: ${({theme}) => theme.COLORS.LIGHT_300};
+            text-decoration: none;
+        }
 
         svg {
             color: ${({theme}) => theme.COLORS.LIGHT_300};
-            font-size: 1.5rem;   
+            font-size: 2rem;
         }
     }
 

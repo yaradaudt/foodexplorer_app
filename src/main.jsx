@@ -9,6 +9,8 @@ import { CartProvider } from './hooks/cart'
 import { Routes } from './routes'
 
 import theme from './styles/theme'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -20,5 +22,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </AuthProvider>
       </CartProvider>
     </ThemeProvider>
+    <ToastContainer position="top-center" autoClose={1000} hideProgressBar={true} theme='dark' toastStyle={{ 
+      backgroundColor: "#00111A", 
+      border: "2px solid #065E7C",
+    }}
+      />
   </React.StrictMode>
 )

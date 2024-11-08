@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { Container, Content, DishDetailled, DishImage, DishDescription, DishIngredients, DishToCart } from  './styles'
 
 import { api } from '../../services/api'
+import { useCart } from '../../hooks/cart'
 
 import { Header } from "../../components/Header"
 import { Footer } from "../../components/Footer"
@@ -17,6 +18,7 @@ export function Dish() {
     const { id } = useParams()
     const [dish, setDish] = useState(null)
     const [number, setNumber] = useState(1)
+    const { addToCart } = useCart()
 
     const navigate = useNavigate()
 
@@ -34,6 +36,11 @@ export function Dish() {
 
     function handleGoBack() {
         navigate(-1)
+    }
+
+    function handleAddToCart() {
+        const item = {...dish, quantity: number }
+        addToCart(item)
     }
 
     return(
@@ -63,7 +70,7 @@ export function Dish() {
 
                                 <DishToCart>
                                     <NumberVar number={number} setNumber={setNumber} />
-                                    <Button title={`incluir - ${dish.price}`} />
+                                    <Button title={`incluir - ${dish.price}`} onClick={handleAddToCart}/>
                                 </DishToCart>
                             </DishDescription>
                         </DishDetailled>

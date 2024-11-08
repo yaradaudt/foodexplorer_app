@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -13,6 +14,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
+    flex-grow: 1;
     padding-left: 7.6rem;
     gap: 3rem;
 
@@ -63,8 +65,11 @@ export const DishIngredients = styled.div`
 
 export const DishToCart = styled.div`
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
+    padding: 0;
+    
+    button {
+        margin: 0;
+    }
 `
-

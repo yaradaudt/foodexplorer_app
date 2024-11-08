@@ -5,17 +5,9 @@ import { Footer } from '../../components/Footer'
 import { Section } from  '../../components/Section'
 import bannerSVG from '../../assets/banner.svg'
 
-import { ToastContainer, toast } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
-
 export function Home() {
   return (
     <Container>
-      <ToastContainer position="top-center" autoClose={1000} hideProgressBar={true} theme='dark' toastStyle={{ 
-        backgroundColor: "#00111A", 
-        border: "2px solid #065E7C",
-      }}
-      />
       <Header />
       <main>
         <Content>

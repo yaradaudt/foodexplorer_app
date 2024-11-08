@@ -25,7 +25,7 @@ export function Section({ categoryName }) {
     return (
         <Container>
             <h2>{categoryName}</h2>
-            <SliderCarousel dishes ={dishes} />
+            <SliderCarousel dishes={dishes} />
         </Container>
     )
 }

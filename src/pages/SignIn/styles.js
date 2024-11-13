@@ -1,10 +1,18 @@
 import styled from 'styled-components'
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoins'
 
 export const Container = styled.div`
     height: 100vh;
 
     display: flex;
     align-items: center;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
 
 `
 export const Wrapper = styled.div`
@@ -19,6 +27,13 @@ export const Wrapper = styled.div`
 
     img {
         width: 20rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
 `
@@ -45,6 +60,10 @@ export const Form = styled.form`
         font-family: 'Poppins', sans-serif;
         font-weight: 500;
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
+
+        @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+            display: none;
+        }
 
     }
 

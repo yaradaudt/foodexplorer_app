@@ -78,15 +78,15 @@ export function EditDish() {
   }
 
   async function handleAddIngredient() {
-    if(newIngredient.trim() === "") return;
+    if (newIngredient.trim() === "") return;
 
-    setIngredients(prevIngredients => [...prevIngredients, newIngredient])
+    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
     setNewIngredient("");
-    }
+  }
 
   function handleRemoveIngredient(deletedIngredient) {
-    setIngredients(prevIngredients =>
-      prevIngredients.filter(ingredient => ingredient !== deletedIngredient)
+    setIngredients((prevIngredients) =>
+      prevIngredients.filter((ingredient) => ingredient !== deletedIngredient)
     );
   }
 
@@ -106,9 +106,11 @@ export function EditDish() {
     if (!name || !category || !ingredients.length || !price || !description) {
       return toast.error("Por favor, preencha todos os campos.");
     }
-    
-    if(newIngredient) {
-      return toast.error("Você deixou um ingrediente no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio.")
+
+    if (newIngredient) {
+      return toast.error(
+        "Você deixou um ingrediente no campo para adicionar, mas não clicou em adicionar. Clique para adicionar ou deixe o campo vazio."
+      );
     }
 
     setLoading(true);
@@ -135,7 +137,7 @@ export function EditDish() {
 
       toast.success("Prato atualizado com sucesso!");
     } catch (error) {
-      console.log("Erro", error)
+      console.log("Erro", error);
       toast.error("Erro ao atualizar prato.");
     } finally {
       setLoading(false);
@@ -216,19 +218,18 @@ export function EditDish() {
               <Label>Ingredientes</Label>
               <IngredientsWrapper>
                 {ingredients.map((ingredient, index) => (
-                  <DishItem 
-                  key={String(index)}
-                  value={ingredient}
-                  onClick={() => handleRemoveIngredient(ingredient)}
+                  <DishItem
+                    key={String(index)}
+                    value={ingredient}
+                    onClick={() => handleRemoveIngredient(ingredient)}
                   />
-                ))
-              }
-                <DishItem 
-                isNew
-                placeholder="Adicionar"
-                onChange={e => setNewIngredient(e.target.value)}
-                value={newIngredient}
-                onClick={handleAddIngredient}
+                ))}
+                <DishItem
+                  isNew
+                  placeholder="Adicionar"
+                  onChange={(e) => setNewIngredient(e.target.value)}
+                  value={newIngredient}
+                  onClick={handleAddIngredient}
                 />
               </IngredientsWrapper>
             </MidWrapper>

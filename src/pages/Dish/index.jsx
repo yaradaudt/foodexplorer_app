@@ -51,14 +51,14 @@ export function Dish() {
   function formatAndSetPrice(price, quantity) {
     const numericPrice = Number(price);
     const totalPrice = (numericPrice * quantity).toFixed(2);
-    setFormattedPrice(`R$ ${totalPrice.replace(".", ",")}`)
+    setFormattedPrice(`R$ ${totalPrice.replace(".", ",")}`);
   }
 
   useEffect(() => {
-    if(dish) {
+    if (dish) {
       formatAndSetPrice(dish.price, number);
     }
-  }, [number, dish])
+  }, [number, dish]);
 
   function handleGoBack() {
     navigate(-1);
@@ -77,13 +77,16 @@ export function Dish() {
     }
   }
 
-  const buttonTitle = user.role === USER_ROLE.ADMIN ? "Editar prato" : `incluir - R$ ${formattedPrice} `;
+  const buttonTitle =
+    user.role === USER_ROLE.ADMIN
+      ? "Editar prato"
+      : `incluir - R$ ${formattedPrice} `;
 
   return (
     <Container>
       <Header />
       <ButtonText onClick={handleGoBack}>
-      <RxCaretLeft />
+        <RxCaretLeft />
         voltar
       </ButtonText>
       <Content>

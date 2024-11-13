@@ -17,7 +17,7 @@ export default createGlobalStyle`
     }
 
     body {
-        width: 1440px;
+        max-width: 1440px;
         background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
 

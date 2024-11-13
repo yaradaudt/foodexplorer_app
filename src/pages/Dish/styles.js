@@ -8,7 +8,7 @@ export const Container = styled.div`
 
     > button {
         margin-top: 8rem;
-        padding-left: 7.6rem;
+        padding-left: 6rem;
     }
 `
 

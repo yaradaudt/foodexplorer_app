@@ -10,7 +10,8 @@ export const Container = styled.div`
   flex-direction: column;
   
   > a {
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    font-family: "Poppins", serif;
+    color: ${({ theme }) => theme.COLORS.BLUE_200};
     margin-top: 1.5rem;
   }
 `;

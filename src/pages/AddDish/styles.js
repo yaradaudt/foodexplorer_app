@@ -7,7 +7,7 @@ export const Container = styled.div`
 
     > button {
         margin-top: 8rem;
-        padding-left: 7.6rem;
+        padding-left: 6rem;
     }
 `
 
@@ -51,6 +51,7 @@ export const TopWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
+    
 `
 
 export const FileLabel = styled.label`
@@ -73,7 +74,7 @@ export const FileLabel = styled.label`
     }
 
     &:hover {
-        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+        background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
     }
 `;
 
@@ -112,6 +113,7 @@ export const MidSection = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
 
 `
 export const MidWrapper = styled.div`
@@ -122,36 +124,19 @@ export const MidWrapper = styled.div`
 `
 export const IngredientsWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 0.8rem;
+    min-height: 3rem;
+    height: auto;
     width: 56rem;
     box-sizing: border-box;    
-    padding: 0.75rem 0.85rem;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
     border: none;
     border-radius: 5px;
-`
-export const BtnAddIngredient = styled.button`
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-    margin-right: 0.75rem;
-    border-radius: 0.3rem;
-    color: ${({ theme }) => theme.COLORS.LIGHT_500};
-    background-color: transparent;
-    border: 1px dashed;
-
-    svg {
-        margin-left: 0.5rem;
-        align-items: center;
-    }
-
-    &:hover {
-        filter: brightness(0.8);
-    }
 `
 
 export const BottomSection = styled.div`

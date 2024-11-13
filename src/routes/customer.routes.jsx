@@ -8,7 +8,7 @@ export function CustomerRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/dish/:id" element={<Dish />} />
+      <Route path="/dishes/:id" element={<Dish />} />
 
       <Route path="*" exact={true} element={<NotFound />} />
     </Routes>

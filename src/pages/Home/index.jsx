@@ -14,7 +14,7 @@ import bannerSVG from "../../assets/banner.svg";
 export function Home() {
   return (
     <Container>
-
+      
       <main>
         <Content>
           <Banner>

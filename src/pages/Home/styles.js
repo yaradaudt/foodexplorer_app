@@ -56,9 +56,18 @@ export const BannerImage = styled.div`
   position: absolute;
   left: -4.1rem;
   bottom: -0.86rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    bottom: -0.65rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    bottom: -0.58rem;
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     left: -2.1rem;
-    bottom: -0.1rem;
+    bottom: -0.25rem;
   }
   img {
     width: 100%;

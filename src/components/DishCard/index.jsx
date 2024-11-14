@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Container, FavButton, DishToCart } from "./styles";
+import { Container, FavButton, DishToCart, LinkTitle } from "./styles";
 
 import { api } from "../../services/api";
 import { useAuth } from "../../hooks/auth";
@@ -57,11 +57,10 @@ export function DishCard({ data }) {
       )}
 
       <img src={imageURL} alt={`Imagem de ${title}`} />
-      <h3 className="product-title">
-        <Link to={`/dishes/${id}`}>{title}
-        </Link>
-        <RiArrowRightSLine />
-      </h3>
+        <LinkTitle className="product-title" to={`/dishes/${id}`}>
+          {title}
+          <RiArrowRightSLine />
+        </LinkTitle>
       <p className="description">{description}</p>
       <h1 className="price">{formattedPrice}</h1>
 

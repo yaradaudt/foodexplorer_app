@@ -28,6 +28,27 @@ export function SliderCarousel({ dishes }) {
                 <CustomPrevArrow />
             </LeftArrowWrapper>
         ),
+        responsive: [
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    centerPadding: "0%",
+                },
+            },
+
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 2.5,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: "0%",
+                },
+            },
+        ]
     }
 
     return(

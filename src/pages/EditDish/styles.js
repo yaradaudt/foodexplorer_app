@@ -168,6 +168,7 @@ export const IngredientsWrapper = styled.div`
   gap: 0.8rem;
   min-height: 3rem;
   height: auto;
+  max-width: 60rem;
   width: 60rem;
   box-sizing: border-box;
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
@@ -177,6 +178,10 @@ export const IngredientsWrapper = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
     width: 48rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    width: 45rem;
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {

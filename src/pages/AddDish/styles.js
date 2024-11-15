@@ -179,6 +179,10 @@ export const IngredientsWrapper = styled.div`
     width: 48rem;
   }
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    width: 45rem;
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     width: 100%;
   }

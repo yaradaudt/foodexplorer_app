@@ -12,12 +12,12 @@ export const Container = styled.div`
     margin-left: 6rem;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-        margin-left: 4rem;
+      margin-left: 4rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-        margin-left: 3rem;
-        font-weight: 600;
+      margin-left: 3rem;
+      font-weight: 600;
     }
   }
 `;
@@ -51,8 +51,8 @@ export const DishImage = styled.div`
     height: auto;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-        width: 90%;
-        justify-content: center;
+      width: 90%;
+      justify-content: center;
     }
   }
 `;
@@ -62,7 +62,6 @@ export const DishDetailled = styled.div`
   flex: 2;
   align-items: center;
   gap: 2rem;
-
 `;
 
 export const DishDescription = styled.div`
@@ -76,7 +75,6 @@ export const DishDescription = styled.div`
     align-items: center;
     text-align: center;
     gap: 1.25rem;
-
   }
 
   h1 {
@@ -88,8 +86,8 @@ export const DishDescription = styled.div`
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-        font-size: 2rem;
-        font-weight: 500;
+      font-size: 2rem;
+      font-weight: 500;
     }
   }
 
@@ -102,13 +100,19 @@ export const DishDescription = styled.div`
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-        font-size: 1rem;
+      font-size: 1rem;
     }
   }
 `;
 
 export const DishIngredients = styled.div`
   display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+   justify-content: center;
+   align-items: center;
+  }
 `;
 
 export const DishToCart = styled.div`
@@ -116,12 +120,17 @@ export const DishToCart = styled.div`
   align-items: center;
   gap: 2rem;
   padding: 0;
+  width: 100%;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    gap: 1rem;
+    flex-direction: column;
   }
 
   button {
     margin: 0;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      width: 100%;
+    }
   }
 `;

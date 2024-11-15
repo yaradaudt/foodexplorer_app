@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+
+import { Container, LogOut } from "./styles";
 import { PiReceipt } from "react-icons/pi";
 import { FiLogOut } from "react-icons/fi";
-import { Container, LogOut, Wrapper } from "./styles";
 
 import { useAuth } from "../../hooks/auth";
 import { USER_ROLE } from "../../utils/roles";
@@ -33,7 +33,6 @@ export function Header() {
 
   return (
     <Container>
-      <Wrapper>
         <Link to="/">
           <img src={logoSrc} alt="Food Explorer Logo" />
         </Link>
@@ -43,9 +42,8 @@ export function Header() {
         {user.role === USER_ROLE.CUSTOMER && (
           <Link to="/favorites">Meus Favoritos</Link>
         )}
-        <Link to="/orders">Histórico de pedidos</Link>
-      </Wrapper>
-
+        <Link to="/orders">Histórico de pedidos</Link>      
+      
       <Link to={buttonLink}>
         <Button
           className="cartButton"

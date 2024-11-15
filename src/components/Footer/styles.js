@@ -1,26 +1,60 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoins";
 
 export const Container = styled.footer`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    width: 100%;
-    height: 4.5rem;
+  width: 100%;
+  height: 4.5rem;
 
-    padding: 0 6rem;
+  padding-left: 6rem;
+  padding-right: 5rem;
 
-    left: 0;
-    border: none;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+  border: none;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
 
-`
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    padding-left: 5rem;
+    padding-right: 4rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    padding-left: 4rem;
+    padding-right: 3rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    padding: 0.5rem;
+    height: 3rem;
+  }
+`;
 
 export const FooterLogo = styled.div`
-    height: 1.9rem;
-`
+  img {
+    max-width: 12rem;
 
-export const Copyright = styled.div`
-    color: ${({ theme }) => theme.COLORS.LIGHT_200};
-    font-size: 0.8rem;
-`
+    @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+      width: 10rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+        width: 8rem;
+    }
+  }
+`;
+
+export const Copyright = styled.p`
+  display: flex;
+  color: ${({ theme }) => theme.COLORS.LIGHT_200};
+  font-size: 0.8rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    font-size: 0.7rem;
+   }
+
+   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    font-size: 0.5rem;
+   }
+`;

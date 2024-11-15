@@ -17,16 +17,16 @@ export const Container = styled.section`
 
     @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
       font-size: 1.9rem;
-      padding: 0 0 1.5rem 5rem;
+      padding: 0 4rem 1.5rem 5rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-      padding: 0 0 1rem 4rem;
+      padding: 0 3rem 1rem 4rem;
       font-size: 1.75rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-      padding: 0 0 1rem 2rem;
+      padding: 0 1rem 1rem 2rem;
       font-size: 1.5rem;
     }
   }

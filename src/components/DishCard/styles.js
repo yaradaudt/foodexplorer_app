@@ -15,17 +15,13 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_200};
 
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-    width: 85%;
+    width: 95%;
     gap: 0.75rem;
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    width: 70%;
-    gap: 0.5rem;
-  }
-
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     width: 85%;
+    gap: 0.5rem;
   }
 
   img {
@@ -76,7 +72,7 @@ export const LinkTitle = styled(Link)`
     color: ${({ theme }) => theme.COLORS.LIGHT_300};
 
     @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-      font-size: 1.15rem;
+      font-size: 1rem;
       text-align: left;
     }
 

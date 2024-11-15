@@ -8,18 +8,18 @@ export const Container = styled.div`
   overflow: visible;
   margin: auto;
   align-items: center;
-  padding: 0 6rem;
+  padding: 0 6rem 0 5rem;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-    padding: 0 5rem;
+    padding: 0 4rem 0 5rem;
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    padding: 0 4rem;
+    padding: 0 3rem 0 4rem;
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    padding: 0 2rem;
+    padding: 0 1rem 0 2rem;
   }
 
   .slick-slide {
@@ -146,7 +146,7 @@ export const LeftArrowWrapper = styled.div`
 export const CustomNextArrow = styled(RxCaretRight)`
   position: absolute;
   top: 50%;
-  right: 2rem;
+  right: 1rem;
   pointer-events: auto;
   cursor: pointer;
   font-size: 3.5rem;
@@ -161,9 +161,9 @@ export const CustomNextArrow = styled(RxCaretRight)`
 export const CustomPrevArrow = styled(RxCaretLeft)`
   position: absolute;
   top: 50%;
+  left: 1rem;
   pointer-events: auto;
   cursor: pointer;
-  left: 2rem;
   font-size: 3.5rem;
 
   color: ${({ theme }) => theme.COLORS.LIGHT_100};

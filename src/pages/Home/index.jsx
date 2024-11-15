@@ -14,8 +14,7 @@ import bannerSVG from "../../assets/banner.svg";
 export function Home() {
   return (
     <Container>
-      
-      <main>
+      <Header/>
         <Content>
           <Banner>
             <BannerImage>
@@ -36,8 +35,7 @@ export function Home() {
 
           <Section categoryName="Bebidas" />
         </Content>
-      </main>
-      
+      <Footer />
     </Container>
   );
 }

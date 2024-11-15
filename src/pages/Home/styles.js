@@ -6,11 +6,8 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  main {
-    justify-self: center;
-    overflow-y: scroll;
-  }
+  justify-self: center;
+  overflow: hidden;
 `;
 
 export const Content = styled.div`
@@ -18,7 +15,6 @@ export const Content = styled.div`
 
   display: flex;
   flex-direction: column;
-  left: 1;
   align-items: center;
   justify-content: center;
 
@@ -26,6 +22,7 @@ export const Content = styled.div`
     margin: 8rem 0;
   }
 `;
+
 export const Banner = styled.div`
   display: flex;
   position: relative;
@@ -67,7 +64,7 @@ export const BannerImage = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
     left: -2.1rem;
-    bottom: -0.25rem;
+    bottom: -0.2rem;
   }
   img {
     width: 100%;

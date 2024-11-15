@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoins";
 
 export const Container = styled.div`
   width: 100%;
@@ -8,20 +9,53 @@ export const Container = styled.div`
   > button {
     margin-top: 8rem;
     padding-left: 6rem;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+      padding-left: 5rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+      padding-left: 4rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      padding-left: 2rem;
+      margin-top: 6rem;
+      font-size: 1.5rem;
+
+      svg {
+        font-size: 2rem;
+      }
+    }
   }
-  
 `;
 
 export const AddDishWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 7.6rem;
+  padding: 1.5rem 5rem 1.5rem 6rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    padding: 1.5rem 4rem 1.5rem 5rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    padding: 1.5rem 3rem 1.5rem 4rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    padding: 1.5rem 2rem;
+  }
 
   > h1 {
     font-family: "Poppins", sans-serif;
     font-size: 2rem;
     font-weight: 600;
     padding-bottom: 2rem;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -44,6 +78,10 @@ export const TopSection = styled.div`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    flex-direction: column;
+  }
 `;
 
 export const TopWrapper = styled.div`
@@ -110,29 +148,40 @@ export const MidSection = styled.div`
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    flex-direction: column;
+  }
 `;
+
 export const MidWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
 `;
+
 export const IngredientsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.1rem 0.5rem;
   gap: 0.8rem;
   min-height: 3rem;
   height: auto;
-  width: 56rem;
-  max-width: 56rem;
+  width: 60rem;
   box-sizing: border-box;
   color: ${({ theme }) => theme.COLORS.LIGHT_100};
   background: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   border: none;
   border-radius: 5px;
- 
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    width: 48rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    width: 100%;
+  }
 `;
 
 export const BottomSection = styled.div`
@@ -140,6 +189,7 @@ export const BottomSection = styled.div`
   flex-direction: column;
   width: 100%;
 `;
+
 export const Textarea = styled.textarea`
   height: 10.75rem;
   box-sizing: border-box;
@@ -159,12 +209,25 @@ export const ButtonWrapper = styled.div`
   justify-content: flex-end;
   gap: 2rem;
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+  }
+
   .save-dish {
     background-color: ${({ theme }) => theme.COLORS.RED_400};
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      width: 50%;
+  }
   }
 
   .delete-dish {
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      width: 50%;
+  }
   }
 `;
-

@@ -26,7 +26,7 @@ export const Container = styled.footer`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     height: 3rem;
   }
 `;
@@ -40,7 +40,7 @@ export const FooterLogo = styled.div`
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-        width: 8rem;
+        width: 9rem;
     }
   }
 `;
@@ -52,9 +52,5 @@ export const Copyright = styled.p`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
     font-size: 0.7rem;
-   }
-
-   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    font-size: 0.5rem;
    }
 `;

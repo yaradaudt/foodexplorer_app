@@ -22,6 +22,7 @@ import {
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { SideMenu } from "../../components/SideMenu";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
@@ -33,6 +34,7 @@ import { FiUpload } from "react-icons/fi";
 import { toast } from "react-toastify";
 
 export function AddDish() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
@@ -121,7 +123,11 @@ export function AddDish() {
 
   return (
     <Container>
-      <Header />
+      <SideMenu 
+      menuIsOpen={menuIsOpen}
+      onCloseMenu={() => setMenuIsOpen(false)} 
+      />
+      <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <ButtonText onClick={handleGoBack}>
         <RxCaretLeft />
         voltar

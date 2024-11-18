@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
-import { Container, LogOut } from "./styles";
+import { Container, Menu, LogOut } from "./styles";
 import { PiReceipt } from "react-icons/pi";
 import { FiLogOut } from "react-icons/fi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 import { useAuth } from "../../hooks/auth";
 import { USER_ROLE } from "../../utils/roles";
@@ -14,7 +15,7 @@ import { Search } from "../Search";
 import logoSVG from "../../assets/logo.svg";
 import adminLogoSVG from "../../assets/admin-logo.svg";
 
-export function Header() {
+export function Header({ onOpenMenu }) {
   const { user } = useAuth();
   const { signOut } = useAuth();
   const { cartCount } = useCart();
@@ -33,6 +34,10 @@ export function Header() {
 
   return (
     <Container>
+      <Menu onClick={onOpenMenu}>
+        <RxHamburgerMenu />
+      </Menu>
+
         <Link to="/">
           <img src={logoSrc} alt="Food Explorer Logo" />
         </Link>

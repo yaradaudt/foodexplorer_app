@@ -17,6 +17,7 @@ import { USER_ROLE } from "../../utils/roles";
 
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { SideMenu } from "../../components/SideMenu";
 import { Button } from "../../components/Button";
 import { ButtonText } from "../../components/ButtonText";
 import { IngredientsTags } from "../../components/IngredientsTags";
@@ -25,6 +26,7 @@ import { NumberVar } from "../../components/NumberVar";
 import { RxCaretLeft } from "react-icons/rx";
 
 export function Dish() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
   const { id } = useParams();
   const { user } = useAuth();
   const { addToCart } = useCart();
@@ -84,7 +86,11 @@ export function Dish() {
 
   return (
     <Container>
-      <Header />
+      <SideMenu
+        menuIsOpen={menuIsOpen}
+        onCloseMenu={() => setMenuIsOpen(false)}
+      />
+      <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <ButtonText onClick={handleGoBack}>
         <RxCaretLeft />
         voltar

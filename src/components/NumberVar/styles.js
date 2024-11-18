@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoins";
 
 export const Container = styled.div`
   max-width: 6.25rem;
@@ -10,6 +11,11 @@ export const Container = styled.div`
   font-weight: 500;
 
   color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    justify-content: center;
+    transform: scale(1.1);
+  }
   
 
   button {

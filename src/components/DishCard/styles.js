@@ -137,7 +137,6 @@ export const DishToCart = styled.div`
     width: 100%;
     transform: scale(0.8);
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
     padding: 0;
    }

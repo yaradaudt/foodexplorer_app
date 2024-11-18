@@ -34,8 +34,11 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    display: none;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 5rem;
 }
+
   a,
   .cartButton {
     font-size: 1rem;
@@ -43,6 +46,10 @@ export const Container = styled.div`
 
     @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
       font-size: 0.9rem;
+    }
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      display: none;
     }
   }
 
@@ -54,6 +61,10 @@ export const Container = styled.div`
     gap: 0.25rem;
     margin: 0;
 
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      display: none;
+    }
+
     svg {
       font-size: 2rem;
 
@@ -64,11 +75,34 @@ export const Container = styled.div`
   }
 `;
 
+export const Menu = styled.button`
+  background: none;
+  border: none;
+  display: none;
+
+  svg {
+    font-size: 2.5rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    display: block;
+  }
+`
+
 export const LogOut = styled.button`
   display: flex;
   align-items: center;
   border: none;
   background: none;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      display: none;
+  }
 
   svg {
     color: ${({ theme }) => theme.COLORS.LIGHT_100};

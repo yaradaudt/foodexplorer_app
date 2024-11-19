@@ -36,6 +36,7 @@ export function SliderCarousel({ dishes }) {
                     slidesToScroll: 1,
                     centerMode: true,
                     centerPadding: "2%",
+                    arrows: true,
                 },
             },
             {
@@ -45,6 +46,8 @@ export function SliderCarousel({ dishes }) {
                     slidesToScroll: 1,
                     centerMode: true,
                     centerPadding: "2%",
+                    arrows: false,
+
                 },
             },
             {
@@ -54,6 +57,8 @@ export function SliderCarousel({ dishes }) {
                     slidesToScroll: 1,
                     centerMode: false,
                     centerPadding: "0%",
+                    arrows: false,
+
                 },
             },
         ]

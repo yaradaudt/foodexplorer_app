@@ -156,6 +156,8 @@ export const CustomNextArrow = styled(RxCaretRight)`
   &:hover {
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
+
+
 `;
 
 export const CustomPrevArrow = styled(RxCaretLeft)`
@@ -171,4 +173,6 @@ export const CustomPrevArrow = styled(RxCaretLeft)`
   &:hover {
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
   }
+
+
 `;

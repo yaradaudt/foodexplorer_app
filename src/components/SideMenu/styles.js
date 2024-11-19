@@ -5,18 +5,21 @@ export const Container = styled.aside`
 display: none;
 
 @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    display: none;
+    display: flex;
     position: fixed;
     flex-direction: column;
     gap: 2rem;
     z-index: 999;
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
     width: 100%;
     height: 100vh;
     overflow-y: none;
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_400};
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
 
     &[data-menu-is-open="true"] {
-        display: flex;
+      transform: translateX(0);
     }
   }
 `;

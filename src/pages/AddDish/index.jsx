@@ -123,9 +123,9 @@ export function AddDish() {
 
   return (
     <Container>
-      <SideMenu 
-      menuIsOpen={menuIsOpen}
-      onCloseMenu={() => setMenuIsOpen(false)} 
+      <SideMenu
+        menuIsOpen={menuIsOpen}
+        onCloseMenu={() => setMenuIsOpen(false)}
       />
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <ButtonText onClick={handleGoBack}>
@@ -154,6 +154,7 @@ export function AddDish() {
             <TopWrapper>
               <Label>Nome</Label>
               <Input
+                className="dish-name"
                 type="text"
                 name="name"
                 value={name}
@@ -202,6 +203,7 @@ export function AddDish() {
             <MidWrapper>
               <Label>Preço</Label>
               <Input
+                className="dish-price"
                 type="text"
                 placeholder="R$ 0,00"
                 value={price}

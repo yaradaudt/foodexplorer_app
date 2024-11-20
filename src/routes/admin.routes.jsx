@@ -1,10 +1,11 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
-import { Home } from "../pages/Home"
-import { Dish } from "../pages/Dish"
-import { AddDish } from "../pages/AddDish"
-import { EditDish } from "../pages/EditDish"
-import { NotFound } from "../pages/NotFound"
+import { Home } from "../pages/Home";
+import { Dish } from "../pages/Dish";
+import { AddDish } from "../pages/AddDish";
+import { EditDish } from "../pages/EditDish";
+import { SearchResults } from "../pages/SearchResults";
+import { NotFound } from "../pages/NotFound";
 
 export function AdminRoutes() {
   return (
@@ -13,6 +14,7 @@ export function AdminRoutes() {
       <Route path="/dishes/:id" element={<Dish />} />
       <Route path="/new" element={<AddDish />} />
       <Route path="/edit/:id" element={<EditDish />} />
+      <Route path="/results" element={<SearchResults />} />
 
       <Route path="*" exact={true} element={<NotFound />} />
     </Routes>

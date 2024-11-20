@@ -32,6 +32,7 @@ export function SignIn() {
         <h2>Email</h2>
 
         <Input
+          className="user-email"
           placeholder="Exemplo: usuário@exemplo.com"
           type="text"
           onChange={(e) => setEmail(e.target.value)}
@@ -40,6 +41,7 @@ export function SignIn() {
         <h2>Senha</h2>
 
         <Input
+          className="user-password"
           placeholder="No mínimo 6 caracteres"
           type="password"
           onChange={(e) => setPassword(e.target.value)}

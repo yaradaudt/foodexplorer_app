@@ -170,7 +170,7 @@ export function EditDish() {
         onCloseMenu={() => setMenuIsOpen(false)}
       />
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
-        
+
       <ButtonText onClick={handleGoBack}>
         <RxCaretLeft />
         voltar
@@ -197,6 +197,7 @@ export function EditDish() {
             <TopWrapper>
               <Label>Nome</Label>
               <Input
+                className="dish-name"
                 type="text"
                 name="name"
                 value={name}
@@ -244,6 +245,7 @@ export function EditDish() {
             <MidWrapper>
               <Label>Preço</Label>
               <Input
+                className="dish-price"
                 type="text"
                 placeholder="R$ 0, 00"
                 value={price}

@@ -52,7 +52,8 @@ export function SignUp(){
                 <h1>Crie sua conta</h1>
                 <h2>Seu nome</h2>
 
-                <Input 
+                <Input
+                className="user-name" 
                 placeholder="Exemplo: Maria da Silva"
                 type="text"
                 onChange={ e => setName(e.target.value)}
@@ -61,6 +62,7 @@ export function SignUp(){
                 <h2>Email</h2>
 
                 <Input
+                className="user-email"
                 placeholder="Exemplo: usuário@exemplo.com"
                 type="text"
                 onChange={ e => setEmail(e.target.value)}
@@ -69,6 +71,7 @@ export function SignUp(){
                 <h2>Senha</h2>
 
                 <Input
+                className="user-password"
                 placeholder="No mínimo 6 caracteres"
                 type="password"
                 onChange={ e => setPassword(e.target.value)}

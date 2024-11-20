@@ -120,7 +120,7 @@ export const DishToCart = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
@@ -130,7 +130,6 @@ export const DishToCart = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     transform: scale(0.7);
-    gap: 1.5rem;
   }
   
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoins";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
@@ -9,47 +10,38 @@ export const Container = styled.div`
   position: absolute;
   border: none;
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-  padding-left: 6rem;
-  padding-right: 5rem;
+  padding: 0 5rem 0 6rem;
   gap: 2rem;
-
-  img {
-    max-width: 12rem;
-    margin-top: 0.2rem;
-
-    @media (max-width: ${DEVICE_BREAKPOINTS.LG}) { 
-    width: 10rem;
-    }
-  }
-
+  
   @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
     padding-left: 5rem;
     padding-right: 4rem;
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
-
+  
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
     padding-left: 4rem;
     padding-right: 3rem;
   }
-
+  
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    height: 5rem;
-}
-
-  a,
-  .cartButton {
-    font-size: 1rem;
-    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  img {
+    max-width: 15rem;
+    margin-top: 0.2rem;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-      font-size: 0.9rem;
+      width: 10rem;
     }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-      display: none;
+      margin-top: 0.5rem;
+      margin-right: 1rem;
+      width: 12rem;
     }
   }
 
@@ -60,6 +52,13 @@ export const Container = styled.div`
     justify-content: center;
     gap: 0.25rem;
     margin: 0;
+    font-size: 1rem;
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    height: 3rem;
+
+    @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+      font-size: 0.8rem;
+    }
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
       display: none;
@@ -75,8 +74,36 @@ export const Container = styled.div`
   }
 `;
 
+export const CartIconWrapper = styled.div`
+  display: none;
+  
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+  
+    a {
+      text-decoration: none;
+      color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    }
+  }
+
+`
+export const CartBadge = styled.span`
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  background-color: ${({ theme }) => theme.COLORS.RED_200};
+  color: ${({ theme }) => theme.COLORS.LIGHT_100};
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.2rem 0.4rem;
+  display: flex;
+`
+
 export const Menu = styled.button`
-  background: none;
+  background: transparent;
   border: none;
   display: none;
 
@@ -90,9 +117,51 @@ export const Menu = styled.button`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    display: block;
+    display: flex;
+    justify-self: center;
+    position: relative;
   }
-`
+`;
+
+export const SearchWrapper = styled.div`
+  display: flex;
+  flex: 1;
+  align-items: center;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    display: none;
+  }
+`;
+
+export const LinkFavs = styled(Link)`
+  font-size: 1rem;
+  color: ${({ theme }) => theme.COLORS.LIGHT_300};
+  
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    width: auto;
+    display: flex;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    display: none;
+  }
+`;
+
+export const LinkOrders = styled(Link)`
+  font-size: 1rem;
+  color: ${({ theme }) => theme.COLORS.LIGHT_300};
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    width: auto;
+    display: flex;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    display: none;
+  }
+`;
 
 export const LogOut = styled.button`
   display: flex;
@@ -101,7 +170,7 @@ export const LogOut = styled.button`
   background: none;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-      display: none;
+    display: none;
   }
 
   svg {
@@ -109,7 +178,7 @@ export const LogOut = styled.button`
     font-size: 1.5rem;
 
     @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-    font-size: 1.25rem;
+      font-size: 1.25rem;
     }
   }
 `;

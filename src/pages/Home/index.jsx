@@ -19,7 +19,7 @@ export function Home() {
     <Container>
       <SideMenu
         menuIsOpen={menuIsOpen}
-        onCloseMenu={() => setMenuIsOpen(false)} 
+        onCloseMenu={() => setMenuIsOpen(false)}
       />
       <Header onOpenMenu={() => setMenuIsOpen(true)} />
       <Content>
@@ -41,8 +41,10 @@ export function Home() {
         <Section categoryName="Sobremesas" />
 
         <Section categoryName="Bebidas" />
+
       </Content>
       <Footer />
     </Container>
   );
 }
+    

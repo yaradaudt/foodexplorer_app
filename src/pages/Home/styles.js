@@ -19,7 +19,7 @@ export const Content = styled.div`
   justify-content: center;
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    margin: 8rem 0;
+    margin: 9rem 0;
   }
 `;
 

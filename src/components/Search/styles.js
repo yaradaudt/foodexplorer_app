@@ -10,8 +10,12 @@ export const Container = styled.div`
   
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+    width: 18rem;
+    padding-left: 0.5rem;
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-    flex: 0;
     width: 100%;
   }
   
@@ -32,5 +36,10 @@ export const Container = styled.div`
     &:focus {
       outline: none;
     }
+  }
+
+  form {
+    display: flex;
+    width: 100%;
   }
 `;

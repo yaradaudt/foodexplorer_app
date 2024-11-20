@@ -20,7 +20,7 @@ export const Container = styled.div`
 
     @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
       padding-left: 2rem;
-      margin-top: 6rem;
+      margin-top: 7rem;
       font-size: 1.5rem;
 
       svg {

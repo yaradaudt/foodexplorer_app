@@ -26,7 +26,7 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.LIGHT_500};
     }
 
-    > input {
+    .dish-item-input {
         text-align: center;
         padding: 0.5rem;
         width: 8rem;

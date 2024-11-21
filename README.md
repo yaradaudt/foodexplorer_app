@@ -4,7 +4,7 @@
 
 O **FoodExplorer** é um cardápio digital para um restaurante fictício, desenvolvido como parte do desafio final da formação Full Stack da Rocketseat.  
 
-Composto por um front-end que consome sua própria API, o FoodExplorer oferece funcionalidades para navegação, seleção de pratos, pesquisa e gerenciamento de pedidos.  
+Composto por um front-end que consome sua própria [API](https://github.com/yaradaudt/foodexplorer-api), o FoodExplorer oferece funcionalidades para navegação, seleção de pratos, pesquisa e gerenciamento de pedidos.  
 
 Este repositório contém o **front-end** do projeto, responsável por oferecer uma experiência intuitiva e responsiva para os usuários.
 
@@ -94,7 +94,7 @@ Este projeto utiliza as seguintes tecnologias e bibliotecas:
 
 A aplicação está disponível aqui: [FoodExplorer APP](https://fooodexplorer-app.netlify.app/). 
 
-Você pode cadastrar um novo usuário comum, mas não conseguirá criar um perfil do ADM. Para facilitar, abaixo seguem informações de usuários já cadastrados.
+Você pode cadastrar um novo usuário comum, mas não conseguirá criar um perfil do ADM. Para facilitar, abaixo seguem informações de usuários de teste já cadastrados.
 
 ## 🔑 Credenciais dos usuários
 
